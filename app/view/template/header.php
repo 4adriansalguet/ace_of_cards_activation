@@ -9,7 +9,7 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;800&family=Montserrat:wght@100;600&family=Playfair+Display&family=Poppins:ital@1&display=swap" rel="stylesheet">
 	<?php $this->helpers->seo($view); ?>
 	<link rel="icon" href="public/images/favicon.png" type="image/x-icon">
 	<link href="<?php echo URL; ?>public/styles/style.css" rel="stylesheet">
@@ -17,12 +17,6 @@
 	<link rel="stylesheet" href="<?php echo URL; ?>public/fancybox/source/jquery.fancybox.css" media="screen" />
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<?php $this->helpers->analytics(); ?>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap"
-		rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700;800&display=swap"
-		rel="stylesheet">
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<script src="./public/scripts/responsive-menu.js"></script>
 </head>
@@ -33,56 +27,45 @@
 
 	<!-- <li <?php $this->helpers->isActiveMenu("home"); ?> class="btn"><a  href="home#content">HOME</a></li>
 							<!-- <li <?php $this->helpers->isActiveMenu("about"); ?>><a href="about#content">ABOUT US</a></li> -->
-	<!-- <div class="menu_flex">
-						<ul>
-							
-						</ul>
-					</div> -->
 
-
+	<div class="separator"></div>
 	<header>
 		<div id="header_container">
-			<div class="logo">
-			<img src="./public/images/common/main_logo.png" alt="reviews">
-			</div>
-			<div class="nav_menu">
-				<div class="header_info">
-					<div class="phone">
-						<span class="phone_text">call us at </span>
-						<img src="./public/images/common/header_phone.png" alt="#">
-						<span class="tel_num"><a href="tel:<?php $this->info("phone"); ?>"><?php $this->info("phone"); ?></a></span>
-					</div>
-					<div class="soc_med">
-						<a href=""><img src="./public/images/icons/facebook.fw.png" alt="#" target="_blank"></a>
-						<a href=""><img src="./public/images/icons/instagram.fw.png" alt="#" target="_blank"></a>
-						<a href=""><img src="./public/images/icons/location.fw.png" alt="#" target="_blank"></a>
-					</div>
+			<div class="flex">
+				<div class="flex-item">
+					<img src="./public/images/common/main_logo.png" alt="logu">
 				</div>
-				<nav>
-					<ul>
-						<li><a href="#">HOME</a></li>
-						<li><a href="#">COMMERCIAL RENDERINGS</a></li>
-						<li><a href="#">RESIDENTIAL RENDERINGS</a></li>
-						<li><a href="#">INTERIOR RENDERINGS</a></li>
-						<li><a href="#">FLOORPLAN RENDERINGS</a></li>
-						<li><a href="#">PERMIT TO BUILD RENDERINGS</a></li>
-						<li><a href="#">CONTRACTOR RENDERINGS</a></li>
-						<li><a href="#">VIRTUAL STAGING</a></li>
-					</ul>
-				</nav>
-				<button class="hamburger">
-					<div class="bar"></div>
-				</button>
-			</div>
 
-			<!-- Hero -->
+				<div class="flex-menu">
+					<nav>
+						<ul>
+							<li <?php $this->helpers->isActiveMenu("home"); ?> class="btn"><a href="home#content">HOME</a></li>
+							<li <?php $this->helpers->isActiveMenu("menu"); ?>><a href="menu#content">MENU</a></li>
+							<li <?php $this->helpers->isActiveMenu("reviews"); ?>><a href="reviews#content">REVIEWS</a></li>
+							<li <?php $this->helpers->isActiveMenu("about"); ?>><a href="about#content">ABOUT US</a></li>
+							<li <?php $this->helpers->isActiveMenu("events"); ?>><a href="events#content">CONTACT</a></li>
+						</ul>
+					</nav>
+					<a class="tel" href="tel:346-757-0078">346-757-0078</a>
+				</div>
+			</div>
+			<div class="text_container">
+				<h2>Ace of Clubs
+					Sports Lounge
+				</h2>
+				<p>
+					Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie
+					consequat, vel illum dolore eu feugiat nulla facilisis at
+				</p>
+				<a href="#">LEARN MORE <img src="/public/images/common/arrowlang.png" alt=""></a>
+			</div>
 
 		</div>
-		<?php if ($view == "home"): ?>
-			<div id="text_container">
-				<h2>A CREATIVE TEAM OF</h2>
-				<h3>Real Estate Renderings Specialists</h3>
-				<a class="btn" href="#">LEARN MORE</a>
-			</div>
+		</div>
+
+
+
+		<?php if ($view == "home") : ?>
+
 		<?php endif; ?>
 	</header>
