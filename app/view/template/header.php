@@ -57,7 +57,7 @@
 					Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie
 					consequat, vel illum dolore eu feugiat nulla facilisis at
 				</p>
-				<a href="#">LEARN MORE <img src="/public/images/common/arrowlang.png" alt=""></a>
+				<a class="btn" href="#">LEARN MORE <img src="./public/images/common/arrowlang.png" alt=""></a>
 			</div>
 
 		</div>

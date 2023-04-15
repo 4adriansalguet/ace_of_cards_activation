@@ -50,12 +50,6 @@
     box-sizing: border-box;
 }
 
-:root {
-    --primary: #FFFFFF;
-    --secondary: -webkit-linear-gradient(#FEE680,#FAC232,#FA9300);
-}
-
-
 section {
     width: 100%;
     transition: 0.5s;
@@ -194,12 +188,19 @@ figcaption {
     display: none;
 }
 
+:root {
+    --primary: #FFFFFF;
+    --secondary: -webkit-linear-gradient(#FEE680,#FAC232,#FA9300);
+    --tertiary: linear-gradient(to bottom, #646464,#484848,#2F2F2F);
+}
+
 body {
-    background: #000000;
+    background:  #000000;
+    max-width: 1920px;
+    width: 100%;
 }
 
 .separator {
-    max-width: 1920px;
     width: 100%;
     padding: 4.5px;
     background-image: linear-gradient(to bottom, #FEE680, #FAC232, #FA9300);
@@ -207,7 +208,7 @@ body {
 
 header {
     background: url('../images/common/home_background.png') no-repeat right;
-    background-size: cover;
+    background-size: contain;
 }
 
 #header_container {
@@ -242,6 +243,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-family: 'Barlow';
     font-size: 20px;
     color: #FFFFFF;
 }
@@ -254,6 +256,10 @@ header {
     background: var(--secondary);
     border-radius: 50px;
     text-align: center;
+    font-family: 'Montserrat';
+    font-size: 17px;
+    font-weight: bold;
+    color: var(--primary);
 }
 
 .text_container {
@@ -274,16 +280,233 @@ header {
 .text_container p {
     font-family: 'Montserrat';
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 100;
     margin-bottom: 40px;
     color: var(--primary);
 }
 
-.text_container a {
-    max-width: 204px;
+ .btn {
+    max-width: 210px;
     width: 100%;
     display: block;
     padding: 26px 38px;
     background: var(--secondary);
     border-radius: 50px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+/* SECTION 2 */
+
+#ace_of_clubs {
+    background: url('../images/common/seksyon2background.png') no-repeat left;
+    background-size: contain;
+    width: 100%;
+    margin-top: 105px;
+    margin-bottom: 128px;
+}
+
+#ace_of_clubs .container {
+    width: 100%;
+}
+
+#ace_of_clubs .container .text_container {
+    max-width: 1150px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#ace_of_clubs .container .text_container .border {
+    max-width: 8px;
+    width: 100%;
+    height: 360px;
+    background: #FAC334;
+    margin: 0 78px;
+}
+
+#ace_of_clubs .container .text_container h2 {
+    max-width: 400px;
+}
+
+#ace_of_clubs .container .text_container p {
+    max-width: 600px;
+    width: 100%;
+    font-size: 16px;
+}
+
+/* SECTION 3 */
+
+#billiards {
+    background: url('../images/common/seksyon3background.png')no-repeat right;
+    background-size: contain;
+    max-width: 1782px;
+    width: 100%;
+    margin: -306px 75px 0;
+} 
+
+#billiards .text_container {
+    display: block;
+    max-width: 573px;
+    width: 100%;
+    padding-top: 306px;
+    padding-left: 150px;
+    margin-bottom: 118px;
+    margin-top: 126px;
+}
+
+#billiards .text_container p {
+    font-size: 16px;
+}
+
+/* SECTION 4 */
+
+#darts {
+    background: url('../images/common/seksyon4background.png') no-repeat left;
+    background-size: contain;
+    max-width: 1782px;
+    width: 100%;
+    margin-top: -174px;
+    margin-left: auto;
+}
+
+
+#darts .darts_text {
+    max-width: 1400px;
+    width: 100%;
+}
+
+
+#darts .text_container  {
+    max-width: 573px;
+    margin-left: auto;
+    padding-left: 50px;
+}
+
+#darts .text_container h2 {
+    padding-top: 80px;
+}
+
+#darts .text_container p {
+    max-width: 573px;
+    font-family: 'Montserrat';
+    font-size: 16px;
+}
+
+/* SECTION 5 */ 
+
+#poker {
+    background: url('../images/common/seksyon5background.png')no-repeat right;
+    background-size: contain;
+    max-width: 1782px;
+    width: 100%;
+    margin-top: -115px;
+}
+
+#poker .poker_text {
+    max-width: 1400px;
+    width: 100%;
+    margin: 50px auto;
+}
+
+#poker .text_container {
+    max-width: 567px;
+    width: 100%;
+    margin-right: auto;
+    padding-top: 120px;
+}
+
+#poker .text_container p {
+    font-family: 'Montserrat';
+    font-size: 16px;
+}
+
+/* SECTION 6 */
+
+#resto {
+    background: url('../images/common/seksyon6background.png') no-repeat left;
+    background-size: contain;
+    max-width: 1782px;
+    width: 100%;
+}
+
+#resto .resto_text {
+    max-width: 1400px;
+    width: 100%;
+}
+
+#resto .resto_text .text_container {
+    max-width: 566px;
+    padding-top: 156px;
+    margin-left: auto;
+}
+
+#resto .resto_text .text_container p {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    color: var(--primary);
+}
+
+#clubs_menu {
+    background: url('../images/common/clubs_background.png')no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+#clubs_menu .clubs_container {
+    max-width: 1705px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 68px;
+}
+
+#clubs_menu .clubs_container h2 {
+    font-family: 'Playfair Display';
+    font-size: 48px;
+    background: var(--secondary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#clubs_menu .clubs_container p {
+    max-width: 1155px;
+    width: 100%;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    color: #FFFFFF;
+    margin: 0 auto;
+}
+
+#clubs_menu .clubs_container .beverage_container {
+    max-width: 1704px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#clubs_menu .clubs_container .beverage_container .card{
+    max-width: 371px;
+    width: 100%;
+    background: var(--tertiary);
+}
+
+#clubs_menu .clubs_container .beverage_container .card h3 {
+    font-family: 'Montserrat';
+    font-size: 19px;
+    font-weight: bold;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    color: #FAA500;
+}
+
+#clubs_menu .clubs_container .beverage_container .card a {
+    font-family: 'Montserrat';
+    font-size: 15px;
+    font-weight: 500;
+    color: #FEE680;
 }
