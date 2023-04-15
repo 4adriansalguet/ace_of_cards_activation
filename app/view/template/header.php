@@ -4,12 +4,12 @@
 
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;800&family=Montserrat:wght@100;600&family=Playfair+Display&family=Poppins:ital@1&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;800&family=Montserrat:wght@100;400;500;600&family=Playfair+Display&family=Poppins:ital@1&display=swap" rel="stylesheet">
 	<?php $this->helpers->seo($view); ?>
 	<link rel="icon" href="public/images/favicon.png" type="image/x-icon">
 	<link href="<?php echo URL; ?>public/styles/style.css" rel="stylesheet">

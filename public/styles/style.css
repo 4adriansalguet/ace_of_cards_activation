@@ -197,6 +197,7 @@ figcaption {
 body {
     background:  #000000;
     max-width: 1920px;
+    min-width: 1920px;
     width: 100%;
 }
 
@@ -262,7 +263,7 @@ header {
     color: var(--primary);
 }
 
-.text_container {
+#header_container .text_container {
     max-width: 400px;
     width: 100%;
     padding-bottom: 230px;
@@ -304,8 +305,8 @@ header {
     background: url('../images/common/seksyon2background.png') no-repeat left;
     background-size: contain;
     width: 100%;
-    margin-top: 105px;
-    margin-bottom: 128px;
+    padding-top: 105px;
+    padding-bottom: 128px;
 }
 
 #ace_of_clubs .container {
@@ -313,11 +314,10 @@ header {
 }
 
 #ace_of_clubs .container .text_container {
-    max-width: 1150px;
+    max-width: 1400px;
     width: 100%;
-    margin: 0 auto;
+    margin-left: auto;
     display: flex;
-    justify-content: space-between;
 }
 
 #ace_of_clubs .container .text_container .border {
@@ -343,19 +343,20 @@ header {
 #billiards {
     background: url('../images/common/seksyon3background.png')no-repeat right;
     background-size: contain;
-    max-width: 1782px;
-    width: 100%;
-    margin: -306px 75px 0;
+    margin-top: -300px;
 } 
 
 #billiards .text_container {
-    display: block;
-    max-width: 573px;
+    max-width: 1400px;
+    width: 100%;;
+    margin: 0 auto;
+    padding-top: 300px;
+    padding-bottom: calc(120px + 116px);
+}
+
+#billiards .text_container .text_billiards{
+    max-width: 560px;
     width: 100%;
-    padding-top: 306px;
-    padding-left: 150px;
-    margin-bottom: 118px;
-    margin-top: 126px;
 }
 
 #billiards .text_container p {
@@ -366,17 +367,16 @@ header {
 
 #darts {
     background: url('../images/common/seksyon4background.png') no-repeat left;
-    background-size: contain;
-    max-width: 1782px;
-    width: 100%;
-    margin-top: -174px;
-    margin-left: auto;
+    background-position-x: 134px;
+    margin-top: -160px;
 }
 
 
 #darts .darts_text {
     max-width: 1400px;
     width: 100%;
+    margin: 0 auto;
+    padding-top: 160px;
 }
 
 
@@ -401,22 +401,20 @@ header {
 #poker {
     background: url('../images/common/seksyon5background.png')no-repeat right;
     background-size: contain;
-    max-width: 1782px;
-    width: 100%;
     margin-top: -115px;
 }
 
 #poker .poker_text {
     max-width: 1400px;
     width: 100%;
-    margin: 50px auto;
+    margin: 0 auto;
+    padding-top: 190px;
 }
 
 #poker .text_container {
-    max-width: 567px;
+    max-width: 550px;
     width: 100%;
     margin-right: auto;
-    padding-top: 120px;
 }
 
 #poker .text_container p {
@@ -428,19 +426,18 @@ header {
 
 #resto {
     background: url('../images/common/seksyon6background.png') no-repeat left;
-    background-size: contain;
-    max-width: 1782px;
-    width: 100%;
 }
 
 #resto .resto_text {
     max-width: 1400px;
     width: 100%;
+    margin: 0 auto;
+    padding-top: 160px;
+    padding-bottom: 210px;
 }
 
 #resto .resto_text .text_container {
     max-width: 566px;
-    padding-top: 156px;
     margin-left: auto;
 }
 
@@ -449,6 +446,8 @@ header {
     font-size: 16px;
     color: var(--primary);
 }
+
+/* SECTION 7 */
 
 #clubs_menu {
     background: url('../images/common/clubs_background.png')no-repeat center;
@@ -462,11 +461,13 @@ header {
     margin: 0 auto;
     text-align: center;
     padding-top: 68px;
+    padding-bottom: 121px;
 }
 
 #clubs_menu .clubs_container h2 {
     font-family: 'Playfair Display';
     font-size: 48px;
+    margin-bottom: 20px;
     background: var(--secondary);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -479,6 +480,7 @@ header {
     font-size: 16px;
     color: #FFFFFF;
     margin: 0 auto;
+    padding-bottom: 47px;
 }
 
 #clubs_menu .clubs_container .beverage_container {
@@ -493,6 +495,7 @@ header {
     max-width: 371px;
     width: 100%;
     background: var(--tertiary);
+    padding-bottom: 32px;
 }
 
 #clubs_menu .clubs_container .beverage_container .card h3 {
@@ -509,4 +512,136 @@ header {
     font-size: 15px;
     font-weight: 500;
     color: #FEE680;
+}
+
+#upcoming_events {
+    background: url('../images/common/seksyon7background.jpg')no-repeat center;
+    /* background-size: cover; */
+    width: 100%;
+    padding-top: 148px;
+    padding-bottom: 140px;
+}
+
+#upcoming_events .upcoming_events_container {
+    max-width: 1410px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#upcoming_events .upcoming_events_container h2 {
+    font-family: 'Playfair Display';
+    font-size: 48px;
+    margin-bottom: 56px;
+    background: var(--secondary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#upcoming_events .upcoming_events_container .flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+#upcoming_events .flex .flex-item {
+    width: 100%;
+}
+
+#upcoming_events .flex .flex-item img {
+    margin-bottom: 25px;
+}
+
+#upcoming_events .flex-item p {
+    max-width: 407px;
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--primary);
+}
+
+/* FOOOTER */
+
+#footer .footer_container {
+    max-width: 1385px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    color: var(--primary);
+}
+
+#footer .footer_container .flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer .footer_container .logo_container {
+    max-width: 239px;
+    width: 100%;
+    margin: 0 auto;
+}
+#footer .footer_container .info_container {
+    max-width: 664px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 48px;
+}
+
+#footer .footer_container .info_container .info {
+    display: flex;
+    justify-content: space-between;
+    max-width: 591px;
+}
+
+#footer .footer_container .info_container .info .phone {
+    margin-bottom: 44px !important;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#footer .footer_container .info_container .info .email {
+    font-family: 'Montserrat';
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 44px;
+}
+
+#footer .footer_container .info_container .info .address{
+    max-width: 161px;
+    width: 100%;
+    font-family: 'Montserrat';
+    font-size: 15px;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+#footer .footer_container .info_container nav ul {
+    display: flex;
+    justify-content: space-between;
+    max-width: 586px;
+    font-family: 'Montserrat';
+    font-size: 13px;
+    font-weight: 400;
+}
+
+#footer .footer_container .info_container nav {
+    margin-bottom: 18px;
+}
+
+#footer .footer_container .info_container .copyright {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#footer .footer_container .text_container {
+    max-width: 396px;
+    width: 100%;
+    font-family: 'Montserrat';
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: auto;
+    padding-top: 48px;
 }

@@ -1,10 +1,43 @@
 <footer id="footer">
-    
-        <p class="copyright">©
-            <?php echo date("Y"); ?>  Plus. All Rights Reserved.
-        </p>
+    <div class="footer_container">
+        <div class="flex">
+            <div class="logo_container">
+                <img src="./public/images/common/footer_logo.png" alt="logo">
+            </div>
+            <div class="info_container">
+                <div class="info">
+                    <div>
+                        <p class="phone">346-757-0078</p>
+                        <p class="email">info@aceofclubssportslounge.com</p>
+                    </div>
+                    <div>
+                        <p class="address"> 3230 S. Main St. Stafford, Texas 77477</p>
+                        <div class="social-icons">
+                            <img src="./public/images/common/fb.png" alt="fb">
+                            <img src="./public/images/common/ig.png" alt="ig">
+                            <img src="./public/images/common/yt.png" alt="yt">
+                            <img src="./public/images/common/twet.png" alt="twet">
+                            <img src="./public/images/common/gogel.png" alt="gogel">
+                        </div>
+                    </div>
+                </div>
+                <nav>
+                    <ul>
+                        <li <?php $this->helpers->isActiveMenu("home"); ?> class="btn"><a href="home#content">HOME</a></li>
+                        <li <?php $this->helpers->isActiveMenu("menu"); ?>><a href="menu#content">MENU</a></li>
+                        <li <?php $this->helpers->isActiveMenu("reviews"); ?>><a href="reviews#content">REVIEWS</a></li>
+                        <li <?php $this->helpers->isActiveMenu("about"); ?>><a href="about#content">ABOUT US</a></li>
+                        <li <?php $this->helpers->isActiveMenu("events"); ?>><a href="events#content">EVENTS</a></li>
+                        <li <?php $this->helpers->isActiveMenu("contact"); ?>><a href="contact#content">CONTACT US</a></li>
+                    </ul>
+                </nav>
+                <p class="copyright"> © <?php echo date("Y"); ?> Ace of Clubs Sports Lounge. All Rights Reserved</p>
+            </div>
+            <div class="text_container">
+                Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+            </div>
+        </div>
     </div>
-
 </footer>
 
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

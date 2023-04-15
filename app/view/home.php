@@ -22,15 +22,17 @@
 
 <section id="billiards">
     <div class="text_container">
-        <h2>
-            Billiards
-        </h2>
-        <p>
-            Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu
-            feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril
-            delenit augue duis dolore te feugait nulla facilisi.
-        </p>
-        <a class="btn" href="#">LEARN MORE <img src="./public/images/common/arrowlang.png" alt=""></a>
+        <div class="text_billiards">
+            <h2>
+                Billiards
+            </h2>
+            <p>
+                Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu
+                feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril
+                delenit augue duis dolore te feugait nulla facilisi.
+            </p>
+            <a class="btn" href="#">LEARN MORE <img src="./public/images/common/arrowlang.png" alt=""></a>
+        </div>
     </div>
 </section>
 
@@ -85,28 +87,55 @@
             feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril
             delenit augue duis dolore te feugait nulla facilisi.</p>
         <div class="beverage_container">
-            <img src="" alt="prev arrow">
+            <img src="./public/images/common/kaliwa.png" alt="prev arrow">
             <div class="card">
-                <img src="./public/images/common/kape.png" alt="">
+                <img src="./public/images/common/kape.png" alt="kape">
                 <h3>Hot Beverage</h3>
-                <a href="view">VIEW MENU <img src="" alt=""></a>
+                <a href="view">VIEW MENU <img src="./public/images/common/arrowliit.png" alt="arrow"></a>
             </div>
             <div class="card">
-                <img src="./public/images/common/prutas.png" alt="">
+                <img src="./public/images/common/prutas.png" alt="pruts">
                 <h3>Hot Beverage</h3>
-                <a href="view">VIEW MENU <img src="" alt=""></a>
+                <a href="view">VIEW MENU <img src="./public/images/common/arrowliit.png" alt="arrow"></a>
             </div>
             <div class="card">
-                <img src="./public/images/common/alak.png" alt="">
+                <img src="./public/images/common/alak.png" alt="gene">
                 <h3>Hot Beverage</h3>
-                <a href="view">VIEW MENU <img src="" alt=""></a>
+                <a href="view">VIEW MENU <img src="./public/images/common/arrowliit.png" alt="arrow"></a>
             </div>
             <div class="card">
-                <img src="./public/images/common/wayn.png" alt="">
+                <img src="./public/images/common/wayn.png" alt="washing">
                 <h3>Hot Beverage</h3>
-                <a href="view">VIEW MENU <img src="" alt=""></a>
+                <a href="view">VIEW MENU <img src="./public/images/common/arrowliit.png" alt="arrow"></a>
             </div>
-            <img src="" alt="next arrow">
+            <img src="./public/images/common/kanan.png" alt="next arrow">
         </div>
     </div>
 </section>
+
+
+<div class="separator"></div>
+
+<section id="upcoming_events">
+    <div class="upcoming_events_container">
+        <h2>Upcoming Events</h2>
+        <div class="flex">
+            <div class="flex-item">
+                <img src="./public/images/common/sugal1.png" alt="pruts">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh</p>
+            </div>
+            <div class="flex-item">
+                <img src="./public/images/common/sugal2.png" alt="pruts">
+                <p>Taoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam</p>
+            </div>
+            <div class="flex-item">
+                <img src="./public/images/common/sugal3.png" alt="pruts">
+                <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<div class="separator"></div>
+
