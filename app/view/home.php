@@ -88,25 +88,33 @@
             delenit augue duis dolore te feugait nulla facilisi.</p>
         <div class="beverage_container">
             <img src="./public/images/common/kaliwa.png" alt="prev arrow">
-            <div class="card">
-                <img src="./public/images/common/kape.png" alt="kape">
-                <h3>Hot Beverage</h3>
-                <a href="view">VIEW MENU <img src="./public/images/common/arrowliit.png" alt="arrow"></a>
+            <div class="slick-box">
+                <div class="card">
+                    <img src="./public/images/common/kape.png" alt="kape">
+                    <h3>Hot Beverage</h3>
+                    <a class="left" href="view">VIEW MENU <img src="./public/images/common/arrowliit.png" alt="arrow"></a>
+                </div>
             </div>
-            <div class="card">
-                <img src="./public/images/common/prutas.png" alt="pruts">
-                <h3>Hot Beverage</h3>
-                <a href="view">VIEW MENU <img src="./public/images/common/arrowliit.png" alt="arrow"></a>
+            <div class="slick-box">
+                <div class="card">
+                    <img src="./public/images/common/prutas.png" alt="pruts">
+                    <h3>Cold Beverage</h3>
+                    <a class="left" href="view">VIEW MENU <img src="./public/images/common/arrowliit.png" alt="arrow"></a>
+                </div>
             </div>
-            <div class="card">
-                <img src="./public/images/common/alak.png" alt="gene">
-                <h3>Hot Beverage</h3>
-                <a href="view">VIEW MENU <img src="./public/images/common/arrowliit.png" alt="arrow"></a>
+            <div class="slick-box">
+                <div class="card">
+                    <img src="./public/images/common/alak.png" alt="gene">
+                    <h3>Alcohol Drinks</h3>
+                    <a class="left" href="view">VIEW MENU <img src="./public/images/common/arrowliit.png" alt="arrow"></a>
+                </div>
             </div>
-            <div class="card">
-                <img src="./public/images/common/wayn.png" alt="washing">
-                <h3>Hot Beverage</h3>
-                <a href="view">VIEW MENU <img src="./public/images/common/arrowliit.png" alt="arrow"></a>
+            <div class="slick-box">
+                <div class="card">
+                    <img src="./public/images/common/wayn.png" alt="washing">
+                    <h3>Wines</h3>
+                    <a class="left" href="view">VIEW MENU <img src="./public/images/common/arrowliit.png" alt="arrow"></a>
+                </div>
             </div>
             <img src="./public/images/common/kanan.png" alt="next arrow">
         </div>
@@ -138,4 +146,3 @@
 
 
 <div class="separator"></div>
-

@@ -4,7 +4,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,6 +19,10 @@
 	<?php $this->helpers->analytics(); ?>
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<script src="./public/scripts/responsive-menu.js"></script>
+	<!-- SLICK ASS -->
+	<link rel="stylesheet" type="text/css" href="./public/styles/slick.css" />
+	<link rel="stylesheet" type="text/css" href="./public/styles/slick-theme.css" />
+
 </head>
 
 <body <?php $this->helpers->bodyClasses($view); ?>>
@@ -39,7 +43,7 @@
 				<div class="flex-menu">
 					<nav>
 						<ul>
-							<li <?php $this->helpers->isActiveMenu("home"); ?> class="btn"><a href="home#content">HOME</a></li>
+							<li <?php $this->helpers->isActiveMenu("home"); ?> class="btn1"><a href="home#content">HOME</a></li>
 							<li <?php $this->helpers->isActiveMenu("menu"); ?>><a href="menu#content">MENU</a></li>
 							<li <?php $this->helpers->isActiveMenu("reviews"); ?>><a href="reviews#content">REVIEWS</a></li>
 							<li <?php $this->helpers->isActiveMenu("about"); ?>><a href="about#content">ABOUT US</a></li>

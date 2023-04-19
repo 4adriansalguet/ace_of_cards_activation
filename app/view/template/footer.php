@@ -23,7 +23,7 @@
                 </div>
                 <nav>
                     <ul>
-                        <li <?php $this->helpers->isActiveMenu("home"); ?> class="btn"><a href="home#content">HOME</a></li>
+                        <li <?php $this->helpers->isActiveMenu("home"); ?> class="btn2"><a href="home#content">HOME</a></li>
                         <li <?php $this->helpers->isActiveMenu("menu"); ?>><a href="menu#content">MENU</a></li>
                         <li <?php $this->helpers->isActiveMenu("reviews"); ?>><a href="reviews#content">REVIEWS</a></li>
                         <li <?php $this->helpers->isActiveMenu("about"); ?>><a href="about#content">ABOUT US</a></li>
@@ -116,6 +116,10 @@
 
 <a class="cta" href="tel:<?php $this->info("phone"); ?>"><span style="display: block; width: 1px; height: 1px; overflow: hidden;">Call To Action Button</span></a>
 
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="./public/scripts/slick.js"></script>
+	<script type="text/javascript"  src="./public/scripts/custom.js"></script>
 <?php $this->checkSuspensionFooter(); ?>
 </body>
 
