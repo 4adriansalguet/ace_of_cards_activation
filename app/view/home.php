@@ -92,28 +92,28 @@
                 <div class="card">
                     <img src="./public/images/common/kape.png" alt="kape">
                     <h3>Hot Beverage</h3>
-                    <a class="left" href="view">VIEW MENU <img src="./public/images/common/arrowliit.png" alt="arrow"></a>
+                    <a class="left" href="<?php echo URL ?>menu#content">VIEW MENU <img src="./public/images/common/arrowliit.png" alt="arrow"></a>
                 </div>
             </div>
             <div class="slick-box">
                 <div class="card">
                     <img src="./public/images/common/prutas.png" alt="pruts">
                     <h3>Cold Beverage</h3>
-                    <a class="left" href="view">VIEW MENU <img src="./public/images/common/arrowliit.png" alt="arrow"></a>
+                    <a class="left" href="<?php echo URL ?>menu#content">VIEW MENU <img src="./public/images/common/arrowliit.png" alt="arrow"></a>
                 </div>
             </div>
             <div class="slick-box">
                 <div class="card">
                     <img src="./public/images/common/alak.png" alt="gene">
                     <h3>Alcohol Drinks</h3>
-                    <a class="left" href="view">VIEW MENU <img src="./public/images/common/arrowliit.png" alt="arrow"></a>
+                    <a class="left" href="<?php echo URL ?>menu#content">VIEW MENU <img src="./public/images/common/arrowliit.png" alt="arrow"></a>
                 </div>
             </div>
             <div class="slick-box">
                 <div class="card">
                     <img src="./public/images/common/wayn.png" alt="washing">
                     <h3>Wines</h3>
-                    <a class="left" href="view">VIEW MENU <img src="./public/images/common/arrowliit.png" alt="arrow"></a>
+                    <a class="left" href="<?php echo URL ?>menu#content">VIEW MENU <img src="./public/images/common/arrowliit.png" alt="arrow"></a>
                 </div>
             </div>
             <img src="./public/images/common/kanan.png" alt="next arrow">

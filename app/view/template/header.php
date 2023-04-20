@@ -4,7 +4,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -47,7 +47,7 @@
 							<li <?php $this->helpers->isActiveMenu("menu"); ?>><a href="menu#content">MENU</a></li>
 							<li <?php $this->helpers->isActiveMenu("reviews"); ?>><a href="reviews#content">REVIEWS</a></li>
 							<li <?php $this->helpers->isActiveMenu("about"); ?>><a href="about#content">ABOUT US</a></li>
-							<li <?php $this->helpers->isActiveMenu("events"); ?>><a href="events#content">CONTACT</a></li>
+							<li <?php $this->helpers->isActiveMenu("contact"); ?>><a href="contact#content">CONTACT US</a></li>
 						</ul>
 					</nav>
 					<a class="tel" href="tel:346-757-0078">346-757-0078</a>

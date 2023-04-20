@@ -48,7 +48,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    
+
 }
 
 section {
@@ -191,23 +191,22 @@ figcaption {
 
 :root {
     --primary: #FFFFFF;
-    --secondary: -webkit-linear-gradient(#FEE680,#FAC232,#FA9300);
-    --tertiary: linear-gradient(to bottom, #646464,#484848,#2F2F2F);
+    --secondary: -webkit-linear-gradient(#FEE680, #FAC232, #FA9300);
+    --tertiary: linear-gradient(to bottom, #646464, #484848, #2F2F2F);
 }
-html {
-    min-width: 1920px;
-    width: 100%;
-}
+
 body {
-    background:  #000000;
+    background: #000000;
     max-width: 1920px;
+    min-width: 1200px;
     width: 100%;
+    overflow-y: scroll;
 }
 
 .separator {
     width: 100%;
     padding: 4.5px;
-    background-image: linear-gradient(to bottom, #FEE680, #FAC232, #FA9300);
+    background-image: var(--secondary);
 }
 
 header {
@@ -288,10 +287,12 @@ header {
     margin-bottom: 40px;
     color: var(--primary);
 }
+
 a {
-    cursor: url(https://cur.cursors-4u.net/symbols/sym-1/sym46.cur), auto !important;
+    /* cursor: url(https://cur.cursors-4u.net/symbols/sym-1/sym46.cur), auto !important; */
 }
- .btn {
+
+.btn {
     max-width: 210px;
     width: 100%;
     display: block;
@@ -302,8 +303,15 @@ a {
     font-weight: 600;
     text-align: center;
     color: #FFFFFF;
+    transition: 0.5s ease-out;
 }
- .btn1 {
+
+.btn:hover {
+    background: #FAA500;
+    transition: 0.5s ease-in-out;
+}
+
+.active-menu {
     color: #FAA500;
 }
 
@@ -314,17 +322,17 @@ a {
 .flex-menu ul li:hover {
     color: #FAA500;
     transition: 0.3s ease-in-out;
-    
+
 }
 
-.btn2 {
+.info .active-menu {
     color: #FAA500;
 }
 
 .footer_container nav ul li:hover {
     color: #FAA500;
     transition: 0.3s ease-in-out;
-    
+
 }
 
 /* SECTION 2 */
@@ -332,9 +340,12 @@ a {
 #ace_of_clubs {
     background: url('../images/common/seksyon2background.png') no-repeat left;
     background-size: contain;
+    background-position-x: 140px;
+    background-position-y: 10px;
     width: 100%;
-    padding-top: 105px;
+    padding-top: 125px;
     padding-bottom: 128px;
+    margin-bottom: 100px;
 }
 
 #ace_of_clubs .container {
@@ -357,13 +368,15 @@ a {
 }
 
 #ace_of_clubs .container .text_container h2 {
-    max-width: 400px;
+    max-width: 500px;
+    width: 100%;
 }
 
 #ace_of_clubs .container .text_container p {
     max-width: 600px;
     width: 100%;
-    font-size: 16px;
+    font-size: 15px;
+    color: var(--primary);
 }
 
 /* SECTION 3 */
@@ -372,30 +385,34 @@ a {
     background: url('../images/common/seksyon3background.png')no-repeat right;
     background-size: contain;
     margin-top: -300px;
-} 
+}
 
 #billiards .text_container {
     max-width: 1400px;
-    width: 100%;;
+    width: 100%;
+    ;
     margin: 0 auto;
     padding-top: 300px;
     padding-bottom: calc(120px + 116px);
 }
 
-#billiards .text_container .text_billiards{
+#billiards .text_container .text_billiards {
     max-width: 560px;
     width: 100%;
 }
 
 #billiards .text_container p {
     font-size: 16px;
+    color: var(--primary);
 }
 
 /* SECTION 4 */
 
 #darts {
     background: url('../images/common/seksyon4background.png') no-repeat left;
-    background-position-x: 134px;
+    background-position-x: 135px;
+    background-position-y: 15px;
+    background-size: contain;
     margin-top: -160px;
 }
 
@@ -408,10 +425,11 @@ a {
 }
 
 
-#darts .text_container  {
+#darts .text_container {
     max-width: 573px;
+    margin-bottom: 20px;
     margin-left: auto;
-    padding-left: 50px;
+    padding-left: 0px;
 }
 
 #darts .text_container h2 {
@@ -422,13 +440,15 @@ a {
     max-width: 573px;
     font-family: 'Montserrat';
     font-size: 16px;
+    color: var(--primary);
 }
 
-/* SECTION 5 */ 
+/* SECTION 5 */
 
 #poker {
     background: url('../images/common/seksyon5background.png')no-repeat right;
     background-size: contain;
+    background-position-x: 1080px;
     margin-top: -115px;
 }
 
@@ -448,6 +468,7 @@ a {
 #poker .text_container p {
     font-family: 'Montserrat';
     font-size: 16px;
+    color: var(--primary);
 }
 
 /* SECTION 6 */
@@ -465,7 +486,7 @@ a {
 }
 
 #resto .resto_text .text_container {
-    max-width: 566px;
+    max-width: 580px;
     margin-left: auto;
 }
 
@@ -507,7 +528,7 @@ a {
     width: 100%;
     font-family: 'Montserrat';
     font-size: 16px;
-    color: #FFFFFF;
+    color: var(--primary);
     margin: 0 auto;
     padding-bottom: 47px;
 }
@@ -525,12 +546,17 @@ a {
     display: inline;
 }
 
-#clubs_menu .clubs_container .beverage_container .card{
+
+#clubs_menu .clubs_container .beverage_container .card {
     max-width: 371px;
     width: 100%;
     background: var(--tertiary);
     padding-bottom: 32px;
     text-align: left;
+}
+
+#clubs_menu .clubs_container .beverage_container .card > img{
+    width: 100%;
 }
 #clubs_menu .slick-box {
     max-width: 371px;
@@ -559,8 +585,7 @@ a {
     background: url('../images/common/seksyon7background.jpg')no-repeat center;
     /* background-size: cover; */
     width: 100%;
-    padding-top: 148px;
-    padding-bottom: 140px;
+    padding: 148px 10px 140px;
 }
 
 #upcoming_events .upcoming_events_container {
@@ -581,6 +606,7 @@ a {
 #upcoming_events .upcoming_events_container .flex {
     display: flex;
     justify-content: space-between;
+    column-gap: 20px;
 }
 
 #upcoming_events .flex .flex-item {
@@ -589,6 +615,7 @@ a {
 
 #upcoming_events .flex .flex-item img {
     margin-bottom: 25px;
+    width: 100%;
 }
 
 #upcoming_events .flex-item p {
@@ -597,7 +624,6 @@ a {
     margin: 0 auto;
     font-family: 'Montserrat';
     font-size: 16px;
-    font-weight: 500;
     color: var(--primary);
 }
 
@@ -622,6 +648,7 @@ a {
     width: 100%;
     margin: 0 auto;
 }
+
 #footer .footer_container .info_container {
     max-width: 664px;
     width: 100%;
@@ -649,7 +676,7 @@ a {
     margin-bottom: 44px;
 }
 
-#footer .footer_container .info_container .info .address{
+#footer .footer_container .info_container .info .address {
     max-width: 161px;
     width: 100%;
     font-family: 'Montserrat';
@@ -665,6 +692,7 @@ a {
     font-family: 'Montserrat';
     font-size: 13px;
     font-weight: 400;
+    margin-top: 20px;
 }
 
 #footer .footer_container .info_container nav {
@@ -678,11 +706,114 @@ a {
 }
 
 #footer .footer_container .text_container {
-    max-width: 396px;
+    max-width: 335px;
     width: 100%;
     font-family: 'Montserrat';
     font-size: 15px;
-    font-weight: 500;
     margin-left: auto;
     padding-top: 48px;
 }
+
+/* CONTACT FORM */
+
+.contact_us {
+    max-width: 835px;
+    width: 100%;
+    background: #ffffff;
+    padding: 80px 72px;
+    margin: 0 auto;
+    /* -webkit-box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.70); */
+}
+
+.contact_us h2 {
+    font-family: 'Playfair';
+    font-size: 17px;
+    font-weight: bold;
+    color: #FA9300;
+    letter-spacing: 0.5em;
+    text-align: center;
+}
+
+.contact_us h3 {
+    font-size: clamp(1.5rem, -1.7031rem + 10.25vw, 4.0625rem);
+    font-family: 'Playfair';
+    font-weight: bold;
+    background-image:var(--secondary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-bottom: 15px;
+    text-align: center;
+}
+.contact_us p {
+    max-width: 650px;
+    font-family: 'Barlow';
+    font-size: 14px;
+    color: #333333;
+    text-align: center;
+    line-height: 22px;
+}
+.contact_us form {
+    margin-top: 30px;
+}
+
+
+.contact_us .form-control {
+    width: 100%;
+    border: 1px solid #E9E9E9;
+    background: #F4F4F4;
+    outline: 0;
+    padding: 15px 30px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-family: 'Barlow';
+}
+
+.contact_us .contact_us_btn {
+    text-transform: uppercase;
+    background: var(--secondary);
+    border: 0;
+    border-radius: 30px;
+    padding: 15px;
+    font-family: 'Barlow';
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    cursor: pointer;
+    transition: 0.4s ease-out;
+}
+
+.contact_us .contact_us_btn:hover {
+    background: #FA9300;
+    transition: 0.4s ease-in-out;
+}
+
+ .contact_us .submit_btn {
+    width: 100%;
+    text-align: right;
+ }
+
+ .ctc-hide {
+    font-family: 'Barlow';
+    padding-bottom: 5px;
+ }
+
+section#about  {
+    text-align: center;
+    font-family: 'Playfair';
+    background-image:var(--secondary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 30px;
+ }
+
+ section#about h1 {
+    margin-bottom: 10px;
+    font-size: 40px;
+ }
+ section#about p {
+    font-size: 30px;
+ }
+
+ 
