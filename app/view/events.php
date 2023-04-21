@@ -1,5 +1,6 @@
 <section id="about" class="inner-pages">
-    <h1>CONTACT US</h1>
+    <h1>EVENTS</h1>
+    <p>Information Coming Soon</p>
 
 </section>
 

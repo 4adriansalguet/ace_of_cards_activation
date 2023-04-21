@@ -218,7 +218,7 @@ header {
     max-width: 1765px;
     width: 100%;
     margin: 0 auto 65px;
-    padding-top: 42px;
+    padding: 42px 20px 0;
 }
 
 #header_container .flex {
@@ -266,24 +266,31 @@ header {
 }
 
 #header_container .text_container {
-    max-width: 400px;
+    max-width: 415px;
     width: 100%;
     padding-bottom: 230px;
+    margin-top: 63px;
+}
+
+#header_container .text_container p {
+    max-width: 381px;
+    width: 100%;
 }
 
 .text_container h2 {
     font-family: 'Playfair Display';
-    font-size: 60px;
+    font-size: 50px;
     background: var(--secondary);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 37px;
 }
 
+
+
 .text_container p {
     font-family: 'Montserrat';
-    font-size: 18px;
-    font-weight: 100;
+    font-size: 16px;
     margin-bottom: 40px;
     color: var(--primary);
 }
@@ -302,7 +309,7 @@ a {
     font-family: 'Montserrat';
     font-weight: 600;
     text-align: center;
-    color: #FFFFFF;
+    color: var(--primary);
     transition: 0.5s ease-out;
 }
 
@@ -325,9 +332,6 @@ a {
 
 }
 
-.info .active-menu {
-    color: #FAA500;
-}
 
 .footer_container nav ul li:hover {
     color: #FAA500;
@@ -340,20 +344,20 @@ a {
 #ace_of_clubs {
     background: url('../images/common/seksyon2background.png') no-repeat left;
     background-size: contain;
-    background-position-x: 140px;
     background-position-y: 10px;
     width: 100%;
-    padding-top: 125px;
-    padding-bottom: 128px;
-    margin-bottom: 100px;
+    margin: 82px 0 100px;
+    padding-bottom: 275px;
 }
 
 #ace_of_clubs .container {
+    max-width: 1575px;
     width: 100%;
+    padding: 0 20px;
 }
 
 #ace_of_clubs .container .text_container {
-    max-width: 1400px;
+    max-width: 1148px;
     width: 100%;
     margin-left: auto;
     display: flex;
@@ -368,15 +372,13 @@ a {
 }
 
 #ace_of_clubs .container .text_container h2 {
-    max-width: 500px;
+    max-width: 410px;
     width: 100%;
 }
 
 #ace_of_clubs .container .text_container p {
-    max-width: 600px;
+    max-width: 608px;
     width: 100%;
-    font-size: 15px;
-    color: var(--primary);
 }
 
 /* SECTION 3 */
@@ -389,11 +391,9 @@ a {
 
 #billiards .text_container {
     max-width: 1400px;
-    width: 100%;
-    ;
+    width: 100%; ;
     margin: 0 auto;
-    padding-top: 300px;
-    padding-bottom: calc(120px + 116px);
+    padding: 300px 20px calc(120px + 116px);
 }
 
 #billiards .text_container .text_billiards {
@@ -401,10 +401,6 @@ a {
     width: 100%;
 }
 
-#billiards .text_container p {
-    font-size: 16px;
-    color: var(--primary);
-}
 
 /* SECTION 4 */
 
@@ -429,7 +425,6 @@ a {
     max-width: 573px;
     margin-bottom: 20px;
     margin-left: auto;
-    padding-left: 0px;
 }
 
 #darts .text_container h2 {
@@ -438,9 +433,7 @@ a {
 
 #darts .text_container p {
     max-width: 573px;
-    font-family: 'Montserrat';
-    font-size: 16px;
-    color: var(--primary);
+    width: 100%;
 }
 
 /* SECTION 5 */
@@ -448,7 +441,6 @@ a {
 #poker {
     background: url('../images/common/seksyon5background.png')no-repeat right;
     background-size: contain;
-    background-position-x: 1080px;
     margin-top: -115px;
 }
 
@@ -456,7 +448,7 @@ a {
     max-width: 1400px;
     width: 100%;
     margin: 0 auto;
-    padding-top: 190px;
+    padding: 190px 20px 0;
 }
 
 #poker .text_container {
@@ -465,11 +457,6 @@ a {
     margin-right: auto;
 }
 
-#poker .text_container p {
-    font-family: 'Montserrat';
-    font-size: 16px;
-    color: var(--primary);
-}
 
 /* SECTION 6 */
 
@@ -481,19 +468,12 @@ a {
     max-width: 1400px;
     width: 100%;
     margin: 0 auto;
-    padding-top: 160px;
-    padding-bottom: 210px;
+    padding: 160px 20px 210px;
 }
 
 #resto .resto_text .text_container {
-    max-width: 580px;
+    max-width: 650px;
     margin-left: auto;
-}
-
-#resto .resto_text .text_container p {
-    font-family: 'Montserrat';
-    font-size: 16px;
-    color: var(--primary);
 }
 
 /* SECTION 7 */
@@ -510,13 +490,12 @@ a {
     width: 100%;
     margin: 0 auto;
     text-align: center;
-    padding-top: 68px;
-    padding-bottom: 121px;
+    padding: 68px 20px 121px;
 }
 
 #clubs_menu .clubs_container h2 {
     font-family: 'Playfair Display';
-    font-size: 48px;
+    font-size: 40px;
     margin-bottom: 20px;
     background: var(--secondary);
     -webkit-background-clip: text;
@@ -596,7 +575,7 @@ a {
 
 #upcoming_events .upcoming_events_container h2 {
     font-family: 'Playfair Display';
-    font-size: 48px;
+    font-size: 40px;
     margin-bottom: 56px;
     background: var(--secondary);
     -webkit-background-clip: text;
@@ -633,8 +612,7 @@ a {
     max-width: 1385px;
     width: 100%;
     margin: 0 auto;
-    padding-top: 40px;
-    padding-bottom: 60px;
+    padding: 40px 20px 60px;
     color: var(--primary);
 }
 

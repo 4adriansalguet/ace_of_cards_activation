@@ -14,7 +14,7 @@
                     facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril
                     delenit augue duis dolore te feugait nulla facilisi.
                 </p>
-                <a class="btn" href="#">LEARN MORE <img src="./public/images/common/arrowlang.png" alt=""></a>
+                <a class="btn" href="#">LEARN MORE <img src="./public/images/common/arrowlang.png" alt="arrow"></a>
             </div>
         </div>
     </div>
@@ -31,7 +31,7 @@
                 feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril
                 delenit augue duis dolore te feugait nulla facilisi.
             </p>
-            <a class="btn" href="#">LEARN MORE <img src="./public/images/common/arrowlang.png" alt=""></a>
+            <a class="btn" href="#">LEARN MORE <img src="./public/images/common/arrowlang.png" alt="arrow"></a>
         </div>
     </div>
 </section>
@@ -47,7 +47,7 @@
                 zzril
                 delenit augue duis dolore te feugait nulla facilisi.
             </p>
-            <a class="btn" href="#">LEARN MORE <img src="./public/images/common/arrowlang.png" alt=""></a>
+            <a class="btn" href="#">LEARN MORE <img src="./public/images/common/arrowlang.png" alt="arrow"></a>
         </div>
     </div>
 </section>
@@ -61,7 +61,7 @@
                 feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
                 zzril
                 delenit augue duis dolore te feugait nulla facilisi.</p>
-            <a class="btn" href="#">LEARN MORE <img src="./public/images/common/arrowlang.png" alt=""></a>
+            <a class="btn" href="#">LEARN MORE <img src="./public/images/common/arrowlang.png" alt="arrow"></a>
         </div>
     </div>
 </section>
@@ -73,7 +73,7 @@
             <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore
                 eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent
                 luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
-            <a class="btn" href="#">LEARN MORE <img src="./public/images/common/arrowlang.png" alt=""></a>
+            <a class="btn" href="#">LEARN MORE <img src="./public/images/common/arrowlang.png" alt="arrow"></a>
         </div>
     </div>
 </section>

@@ -23,7 +23,7 @@
                 </div>
                 <nav>
                     <ul>
-                        <li <?php $this->helpers->isActiveMenu("home"); ?> class="btn2"><a href="home#content">HOME</a>
+                        <li <?php $this->helpers->isActiveMenu("home"); ?> class="active-menu"><a href="home#content">HOME</a>
                         </li>
                         <li <?php $this->helpers->isActiveMenu("menu"); ?>><a href="menu#content">MENU</a></li>
                         <li <?php $this->helpers->isActiveMenu("reviews"); ?>><a href="reviews#content">REVIEWS</a></li>

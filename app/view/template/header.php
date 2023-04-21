@@ -43,10 +43,11 @@
 				<div class="flex-menu">
 					<nav>
 						<ul>
-							<li <?php $this->helpers->isActiveMenu("home"); ?> class="btn1"><a href="home#content">HOME</a></li>
+							<li <?php $this->helpers->isActiveMenu("home"); ?> class="active-menu"><a href="home#content">HOME</a></li>
 							<li <?php $this->helpers->isActiveMenu("menu"); ?>><a href="menu#content">MENU</a></li>
 							<li <?php $this->helpers->isActiveMenu("reviews"); ?>><a href="reviews#content">REVIEWS</a></li>
 							<li <?php $this->helpers->isActiveMenu("about"); ?>><a href="about#content">ABOUT US</a></li>
+							<li <?php $this->helpers->isActiveMenu("events"); ?>><a href="events#content">EVENTS</a></li>
 							<li <?php $this->helpers->isActiveMenu("contact"); ?>><a href="contact#content">CONTACT US</a></li>
 						</ul>
 					</nav>
